@@ -250,84 +250,69 @@ header .active a {
 }
 
 /* Team section */
-.team__section {
+.team__section{
     padding: 70px 0 110px;
 }
-
-.team__section-info .team__section-title {
-    margin-bottom: 35px;
+.team__section-info .team__section-title{
     font-size: 42px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 35px;
 }
-
-.team__section-info .team__section-text {
-    max-width: 450px;
-    margin-bottom: 40px;
+.team__section-info .team__section-text{
     line-height: 28px;
+    margin-bottom: 40px;
+    max-width: 450px;
 }
-
-.team__section-info .red-line {
+.team__section-info .red-line{
     margin-bottom: 65px;
 }
-
-.team__pictures-section {
+.team__pictures-section{
     display: flex;
     justify-content: space-between;
 }
-
-.team__pictures-section .main-picture-section {
+.team__pictures-section .main-picture-section{
     width: 25%;
 }
-
-.person__info .person__info-title {
-    margin-bottom: 25px;
+.person__info .person__info-title{
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
-
-.person__info .person__info-text {
-    max-width: 630px;
-    margin-bottom: 35px;
+.person__info .person__info-text{
     line-height: 28px;
+    margin-bottom: 35px;
 }
-
-.person__info .person__sm-list {
+.person__info .person__sm-list{
     display: flex;
-    margin-bottom: 50px;
-    font-size: 18px;
-    font-style: italic;
     gap: 30px;
+    font-size: 18px;
     line-height: 24px;
+    font-style: italic;
+    margin-bottom: 50px;
 }
-
-.person__info .person__sm-list a:hover {
+.person__info .person__sm-list a:hover{
     color: #ee4941;
 }
-
-.add-pictures-section {
+.add-pictures-section{
     display: flex;
-    gap: 20px;
+    gap:20px;
 }
-
 .name-on-pic .person-name {
-    color: transparent;
     font-size: 18px;
     font-weight: 500;
-    text-align: center;
     text-transform: uppercase;
+    color: transparent;
+    text-align: center;
 }
-
-.name-on-pic {
-    height: 40px;
+.name-on-pic{
     margin-top: -28px;
 }
-
-.name-on-pic .person-name:hover {
-    position: relative;
-    background-color: #7a786e;
+.add-picture:hover >.name-on-pic .person-name{
     color: white;
+    background-color: #7a786e;
+    position: relative;
     transition: .3s;
 }
 
@@ -365,7 +350,9 @@ header .active a {
     border-radius: 2px;
     line-height: 24px;
 }
-
+#email:focus{
+    border: #ff2d2d solid 3px;
+}
 .subscribe-form .subscribe-button {
     padding: 25px 60px;
     border: #ff2d2d solid 2px;
@@ -385,103 +372,100 @@ header .active a {
 }
 
 /* Contact section */
-.contact__section {
+.contact__section{
     padding: 110px 0;
+    overflow-x: hidden;
 }
-
-.contact__form-preview .contact__section-title {
-    margin-bottom: 50px;
+.contact__form-preview .contact__section-title{
     font-size: 42px;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
-
-.contact__form-preview .contact__section-text {
+.contact__form-preview .contact__section-text{
     max-width: 725px;
     margin-bottom: 50px;
 }
-
-.contact__form-preview .red-line {
+.contact__form-preview .red-line{
     margin-bottom: 75px;
 }
-
-.contact__section .row {
+.contact__section .row{
     gap: 110px;
 }
-
-.contact__section .contact-form-fields {
+.contact__section .contact-form-fields{
     display: flex;
     flex-wrap: wrap;
 }
-
 .contact-form #name,
-.contact-form #mail {
+.contact-form #mail{
     width: 46%;
     height: 70px;
 }
-
-.contact-form #name {
+.contact-form #name{
     margin: 0 50px 50px 0;
 }
-
-.contact-form .text-area-contact {
-    width: 100%;
+.contact-form .text-area-contact{
+    width:100%;
     height: 253px;
     padding-top: 35px;
     margin-bottom: 45px;
     resize: none;
 
 }
+.contact-form #name:focus,
+.contact-form #mail:focus,
+.contact-form .text-area-contact:focus{
+    border: #ff2d2d solid 3px;
+}
 
-.contact-form .submit-contact-form {
-    width: 100%;
+.contact-form .submit-contact-form{
     padding-top: 20px;
     background-color: #ff3b3b;
     color: white;
     text-transform: uppercase;
+    width: 100%;
 }
-
-.contact-form .submit-contact-form:hover {
-    background-color: transparent;
-    color: #ff3b3b;
+.contact-form .submit-contact-form:hover{
+    background-color:transparent;
+    color:  #ff3b3b;
     transition: .3s;
 }
-
-.contact__address-info {
+.contact__address-info{
     background-color: #2d2d2d;
+    z-index: 1;
 
 }
-
-.contact__address-info .contact__address-block {
+.contact__address-info .contact__address-block{
     padding: 145px 30px 70px 80px;
 
 }
-
-.contact__address-info .contact__address-title {
-    margin-bottom: 40px;
+.contact__address-info .contact__address-title{
     color: #e0e0e0;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    font-style:normal;
 }
-
-.contact__address-info .contact__address-text {
-    max-width: 320px;
-    margin-bottom: 25px;
+.contact__address-info .contact__address-text{
     color: #e0e0e0;
-    font-style: normal;
-    font-weight: 400;
+    max-width: 290px;
+    margin-bottom: 35px;
+    font-style:normal;
 }
-
-.contact__section .wrapper::after {
-    position: absolute;
-    left: 82%;
-    display: block;
-    width: 325px;
-    height: 479px;
-    background-color: #2d2d2d;
+.contact__section .wrapper{
+    position: relative;
+}
+.contact__section .wrapper:after {
     content: ' ';
+    width: 100vw;
+    height: 100%;
+    background-color: #2d2d2d;
+    position: absolute;
+    display: block;
+    left:100%;
+
 }
+ /*Footer*/
 
 footer {
     padding: 45px 0 30px;
@@ -504,12 +488,6 @@ footer .footer__block {
     gap: 15px;
 }
 
-@media (max-width: 1600px) {
-    .contact__section .wrapper::after {
-        display: none;
-    }
-
-}
 
 @media (max-width: 1280px) {
     .container {
@@ -733,7 +711,6 @@ footer .footer__block {
         max-width: 150px;
         font-size: 14px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -954,6 +931,10 @@ footer .footer__block {
         font-size: 16px;
         text-align: center;
     }
+    .contact__section .wrapper::after {
+        display: none;
+    }
+
 }
 
 @media (max-width: 576px) {
