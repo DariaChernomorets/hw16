@@ -269,10 +269,10 @@ header .active a {
 }
 .team__pictures-section{
     display: flex;
-    justify-content: space-between;
+
 }
 .team__pictures-section .main-picture-section{
-    width: 25%;
+    width: 30%;
 }
 .person__info .person__info-title{
     font-size: 30px;
@@ -290,7 +290,7 @@ header .active a {
     font-size: 18px;
     line-height: 24px;
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 58px;
 }
 .person__info .person__sm-list a:hover{
     color: #ee4941;
@@ -397,7 +397,7 @@ header .active a {
 }
 .contact-form #name,
 .contact-form #mail{
-    width: 46%;
+    width: calc(50% - 25px);
     height: 70px;
 }
 .contact-form #name{
@@ -418,7 +418,7 @@ header .active a {
 }
 
 .contact-form .submit-contact-form{
-    padding-top: 20px;
+    padding: 23px 0;
     background-color: #ff3b3b;
     color: white;
     text-transform: uppercase;
@@ -435,7 +435,7 @@ header .active a {
 
 }
 .contact__address-info .contact__address-block{
-    padding: 145px 30px 70px 80px;
+    padding: 145px 0 70px 80px;
 
 }
 .contact__address-info .contact__address-title{
@@ -532,6 +532,12 @@ footer .footer__block {
 
     .add-pictures-section {
         gap: 10px;
+    }
+    .person__info .person__info-text{
+        margin-bottom: 25px;
+    }
+    .person__info .person__sm-list{
+       margin-bottom: 18px;
     }
 
     /* Subscribe section */
@@ -672,7 +678,7 @@ footer .footer__block {
     }
 
     .person__info .person__sm-list {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .person__info .person__info-title {
@@ -848,6 +854,7 @@ footer .footer__block {
     .subscribe__section .subscribe__section-title {
         margin-bottom: 20px;
         font-size: 32px;
+        line-height: 34px;
     }
 
     .subscribe__section .subscribe__section-text {
@@ -856,7 +863,7 @@ footer .footer__block {
     }
 
     .subscribe-form {
-        padding: 55px 0;
+        padding: 25px 0 55px;
     }
 
     #email {
@@ -940,6 +947,9 @@ footer .footer__block {
 @media (max-width: 576px) {
     * {
         font-size: 12px;
+    }
+    .container{
+        max-width: 480px;
     }
 
     /* Header */
@@ -1244,5 +1254,7 @@ footer .footer__block {
     .contact__address-info .contact__address-text {
         font-size: 11px;
     }
-
+    .footer__sm-list .sm-icons .sm-pic{
+        width: 75%;
+    }
 }
