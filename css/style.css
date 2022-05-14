@@ -603,6 +603,7 @@ footer .footer__block {
 
     .service__section .col {
         width: 100%;
+        justify-content: space-between;
     }
 
     .service__description .service__title {
@@ -693,11 +694,12 @@ footer .footer__block {
 
     #email {
         width: 100%;
-        margin-bottom: 15px;
+        margin: 0 auto 15px;
     }
 
     .subscribe-form .subscribe-button {
-        margin-left: 130px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     /* Contact section */
@@ -720,10 +722,6 @@ footer .footer__block {
 }
 
 @media (max-width: 768px) {
-    * {
-        font-size: 14px;
-    }
-
     .container {
         max-width: 576px;
 
@@ -746,8 +744,10 @@ footer .footer__block {
     }
 
     .introduction__text .introduction__contact {
-        margin: 0 175px 40px;
-        font-size: 14px;
+        width:100%;
+        margin: 0 auto 25px;
+        font-size: 16px;
+        text-align: center;
     }
 
     /* Services section */
@@ -766,12 +766,13 @@ footer .footer__block {
 
     .service__description .learnMore {
         margin: 0 175px 40px;
-        font-size: 14px;
+        font-size: 16px;
+        padding: 12px 50px;
     }
 
     .service__info-block .service__info-title {
         margin: 15px 0;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .service__info-block .service__info-text {
@@ -832,7 +833,7 @@ footer .footer__block {
 
     .person__info .person__info-title {
         margin-bottom: 15px;
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
     }
 
@@ -845,7 +846,9 @@ footer .footer__block {
         justify-content: center;
         margin-bottom: 25px;
     }
-
+    .person__info .person__sm-list a{
+        font-size: 20px;
+    }
     /* Subscribe section */
     .subscribe__section {
         padding-top: 40px;
@@ -910,6 +913,7 @@ footer .footer__block {
 
     .contact-form .text-area-contact {
         height: 150px;
+        margin-bottom: 20px;
     }
 
     .contact-form .submit-contact-form {
@@ -945,9 +949,7 @@ footer .footer__block {
 }
 
 @media (max-width: 576px) {
-    * {
-        font-size: 12px;
-    }
+
     .container{
         max-width: 480px;
     }
@@ -1145,24 +1147,26 @@ footer .footer__block {
 
 @media (max-width: 480px) {
     * {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     /* Introduction section */
     .introduction__section {
         padding: 15px 0;
     }
-
+    .introduction__text .introduction__contact{
+        font-size: 16px;
+    }
     .introduction__text .introduction__title {
         margin-bottom: 10px;
-        font-size: 28px;
+        font-size: 30px;
         letter-spacing: 2px;
         line-height: 32px;
     }
 
     .introduction__text .introduction__description {
         margin-bottom: 15px;
-        line-height: 14px;
+        line-height: 16px;
     }
 
     .introduction__text .introduction__contact {
@@ -1173,39 +1177,44 @@ footer .footer__block {
     .service__section .container {
         padding-bottom: 30px;
     }
-
+    .service__description .learnMore {
+        font-size: 16px;
+    }
     .service__description .service__title {
-        font-size: 26px;
-        line-height: 28px;
+        font-size: 28px;
+        line-height: 30px;
     }
 
     .service__description .service__text {
-        line-height: 14px;
+        line-height: 16px;
     }
-
+    .service__info-block .service__info-title {
+        font-size: 22px;
+    }
 
     /* Product section */
     .product__section-intro .product__section-title {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .product__section-intro .product__section-text {
-        line-height: 14px;
+        line-height: 16px;
     }
 
     .product__section-intro .red-line {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     .product__section-intro .products__section-list {
+        display: block;
+        text-align: center;
         margin-bottom: 30px;
-        gap: 5px;
     }
 
     .product__section-intro .products__section-list a {
-        font-size: 11px;
-        line-height: 14px;
-    }
+        font-size: 16px;
+        margin-bottom: 10px;
+     }
 
     /* Team section */
     .team__section-info .team__section-title {
@@ -1215,7 +1224,12 @@ footer .footer__block {
     .team__section-info .team__section-text {
         line-height: 14px;
     }
-
+    .person__info .person__info-title {
+        font-size: 22px;
+    }
+    .person__info .person__sm-list a{
+        font-size: 18px;
+    }
     .person__info .person__info-text {
         line-height: 14px;
     }
@@ -1226,15 +1240,16 @@ footer .footer__block {
     }
 
     .subscribe__section .subscribe__section-title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .subscribe__section .subscribe__section-text {
-        line-height: 14px;
+        line-height: 16px;
     }
 
     .subscribe-form .subscribe-button {
-        font-size: 12px;
+        font-size: 15px;
+        padding: 12px 0;
     }
 
 
@@ -1246,13 +1261,16 @@ footer .footer__block {
     .contact__form-preview .contact__section-text {
         line-height: 14px;
     }
-
-    .contact-form .submit-contact-form {
-        font-size: 12px;
+    .contact-form #name,
+    .contact-form #mail,
+    .contact-form .text-area-contact{
+        padding-left: 25px;
     }
-
+   .contact-form .submit-contact-form {
+        font-size: 16px;
+    }
     .contact__address-info .contact__address-text {
-        font-size: 11px;
+        font-size: 14px;
     }
     .footer__sm-list .sm-icons .sm-pic{
         width: 75%;
